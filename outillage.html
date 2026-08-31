@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outillage — ZOT Pièces Auto · La Réunion</title>
+<meta name="description" content="Outillage professionnel à la Rivière Saint-Louis : douilles choc, outillage à main, coffrets, matériel d'atelier. Gamme pro à La Réunion.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{ --r:#E2001A; --r2:#b50015; --noir:#121212; --noir2:#1c1c1c; --gris:#5c5c5c; --gris2:#9a9a9a; --clair:#f4f4f2; --bord:#e6e6e2; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Montserrat',-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--noir);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  svg.i{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:.6px;text-transform:uppercase}
+  .btn-r{background:var(--r);color:#fff}.btn-r:hover{background:var(--r2)}
+  .btn svg.i{width:18px;height:18px}
+  header{background:var(--noir);position:sticky;top:0;z-index:20}
+  header .wrap{display:flex;align-items:center;gap:44px;height:158px;padding-right:220px}
+  .brand{display:flex;flex-direction:column;align-items:center;gap:6px;line-height:1.15}
+  .brand img{height:120px;width:auto;display:block}
+  .brand .tagline{color:#cfcfcf;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;text-align:center;max-width:215px}
+  nav{display:flex;align-items:center;gap:30px}
+  nav a{color:#eee;font-weight:700;font-size:15px;letter-spacing:.5px;text-transform:uppercase}
+  nav a.act,nav a:hover{color:var(--r)}
+  .telbox{position:absolute;top:0;right:0;height:100%;background:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;padding:0 40px 0 60px;clip-path:polygon(38px 0,100% 0,100% 100%,0 100%)}
+  .telbox .tphone{display:flex;align-items:center;gap:13px;color:var(--r);font-weight:800;font-size:26px;letter-spacing:.5px}
+  .telbox .tphone svg.i{color:var(--r);width:27px;height:27px;stroke-width:2.4}
+  .telbox .tmail{color:#555;font-weight:600;font-size:13.5px;letter-spacing:.2px;padding-left:40px}
+  .telbox .tmail:hover{color:var(--r)}
+  .hero{position:relative;background:var(--noir);color:#fff;min-height:560px;display:flex;align-items:center;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;background:url('assets/hero.png') 100% 50% / 152% no-repeat}
+  .hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.24) 44%,rgba(0,0,0,.04) 74%,transparent 100%)}
+  .hero .wrap{position:relative;padding:66px 26px}
+  .hero h1{font-size:98px;line-height:.9;font-weight:900;letter-spacing:-1.5px;text-shadow:0 3px 24px rgba(0,0,0,.9),0 1px 3px rgba(0,0,0,.9)}
+  .hero h1 .red{color:var(--r)}
+  .hero .pre{color:#a8a8a8;font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding-left:5px;margin-bottom:4px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+  .hero .haccent{width:92px;height:5px;background:var(--r);border-radius:2px;margin:24px 0 2px}
+  .hero .sub{font-size:22px;font-weight:700;color:#fff;margin:22px 0 36px;max-width:610px;text-transform:uppercase;letter-spacing:.4px;text-shadow:0 2px 16px rgba(0,0,0,.95)}
+  .magasin{padding:22px 0 62px}
+  .magasin .grid{display:grid;grid-template-columns:1.1fr .95fr .95fr;border-radius:16px;overflow:hidden;border:1px solid var(--bord)}
+  .magasin .photo{background:url('assets/devanture.png') center/cover no-repeat;min-height:360px}
+  .magasin .info{background:var(--noir);color:#fff;padding:40px 38px}
+  .magasin .info h3{font-size:28px;font-weight:900;margin-bottom:24px;line-height:1.15;text-transform:uppercase}
+  .magasin .info h3 .r{color:var(--r)}
+  .magasin .row{display:flex;gap:14px;margin-bottom:18px;font-size:16px;color:#e6e6e6}
+  .magasin .row .ic{color:var(--r);flex-shrink:0}
+  .magasin .row .ic svg.i{width:20px;height:20px}
+  .magasin .row b{color:#fff;font-weight:700}
+  .magasin .map{position:relative;min-height:360px;background:#e9e9e6}
+  .magasin .map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.15)}
+  footer{background:var(--noir);color:#cfcfcf;padding:54px 0 0;font-size:15px}
+  footer .grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.15fr;gap:34px}
+  footer .flogo{height:78px;margin-bottom:16px}
+  footer .about{color:#a9a9a9;font-size:15px;max-width:270px}
+  footer h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:16px}
+  footer li{list-style:none;margin-bottom:9px}
+  footer a:hover{color:var(--r)}
+  footer .ct{display:flex;gap:11px;margin-bottom:12px;align-items:flex-start}
+  footer .ct .ic{color:var(--r);flex-shrink:0}
+  footer .ct .ic svg.i{width:18px;height:18px}
+  .social{display:flex;gap:12px;margin-top:16px}
+  .social a{width:38px;height:38px;border-radius:50%;background:#262626;display:flex;align-items:center;justify-content:center;color:#fff}
+  .social a:hover{background:var(--r)}
+  .social svg.i{width:19px;height:19px}
+  footer .base{border-top:1px solid #2c2c2c;margin-top:40px;background:var(--r);color:#fff;text-align:center;font-size:12.5px;letter-spacing:1px;padding:13px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px}
+  footer .base svg.i{width:15px;height:15px;stroke-width:2.4}
+  .fullw{margin-left:calc(-50vw + 50%);width:100vw}
+  /* --- page Pièces auto --- */
+  .hero.pieces{min-height:460px}
+  .hero.pieces .bg{background:url('assets/hero-pieces.png') 100% 50% / cover no-repeat}
+  .hero.pieces .veil{background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.5) 40%,rgba(0,0,0,.12) 74%,transparent 100%)}
+  .hero.pieces h1{font-size:68px;line-height:.95}
+  .hero.pieces .sub{text-transform:none;font-weight:600;font-size:19px;color:#ededed;max-width:560px;margin:26px 0 0}
+  .sect{padding:58px 0}
+  .sect-t{text-align:center;font-size:38px;font-weight:900;text-transform:uppercase;letter-spacing:-.5px;margin-bottom:38px}
+  .gammes .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+  .gcard{background:var(--noir);border-radius:15px;overflow:hidden;color:#fff;display:flex;flex-direction:column}
+  .gcard .im{width:100%;height:172px;object-fit:cover;display:block;background:#141414}
+  .gcard .im.ph{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 42%,#242424,#141414)}
+  .gcard .im.ph svg{width:60px;height:60px;stroke:var(--r);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+  .gcard .b{padding:20px 20px 24px}
+  .gcard h3{font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:.2px;line-height:1.2}
+  .gcard .u{width:38px;height:3px;background:var(--r);margin:11px 0 12px}
+  .gcard p{font-size:14px;color:#c9c9c9;line-height:1.55}
+  .marques{padding:6px 0 58px}
+  .marques .box{border:1px solid var(--bord);border-radius:16px;padding:36px 30px}
+  .marques h2{text-align:center;font-size:25px;font-weight:900;text-transform:uppercase;letter-spacing:.3px;margin-bottom:28px}
+  .marques .row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px}
+  .brand-slot{height:72px;min-width:152px;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--bord);border-radius:12px;padding:12px 24px}
+  .brand-slot img{max-height:42px;max-width:145px;width:auto;object-fit:contain;display:block}
+  .cta-band{position:relative;overflow:hidden;background:linear-gradient(100deg,var(--r) 0%,var(--r2) 100%);color:#fff;text-align:center;padding:62px 20px}
+  .cta-band h2{font-size:40px;font-weight:900;text-transform:uppercase;letter-spacing:-.5px;margin-bottom:14px;position:relative;z-index:1}
+  .cta-band p{max-width:660px;margin:0 auto 26px;font-size:17px;color:#ffe0e0;position:relative;z-index:1}
+  .cta-band .btn-w{background:#fff;color:var(--r);position:relative;z-index:1}
+  .cta-band .btn-w:hover{background:#111;color:#fff}
+  .cta-band .spark{position:absolute;right:5%;top:50%;transform:translateY(-50%);width:130px;height:130px;opacity:.16;fill:#fff}
+  .cta-band .spark.l{right:auto;left:4%;width:80px;opacity:.1}
+  @media(max-width:1100px){ .gammes .grid{grid-template-columns:repeat(3,1fr)} }
+  @media(max-width:900px){
+    .gammes .grid{grid-template-columns:1fr 1fr}
+    .hero.pieces h1{font-size:50px}
+    .cta-band h2{font-size:30px}
+  }
+  @media(max-width:560px){ .gammes .grid{grid-template-columns:1fr} }
+  .gcard.wide{grid-column:1 / -1;flex-direction:row;align-items:stretch;overflow:hidden;background:linear-gradient(90deg,#141414 0%,#1b1b1b 100%);border:1px solid #272727}
+  .gcard.wide .ic{flex-shrink:0;width:180px;display:flex;align-items:center;justify-content:center;background:rgba(226,0,26,.10);border-right:3px solid var(--r)}
+  .gcard.wide .ic svg.i{width:54px;height:54px;stroke:var(--r);stroke-width:1.6}
+  .gcard.wide .b{padding:26px 34px;display:flex;flex-direction:column;justify-content:center}
+  .gcard.wide h3{font-size:22px}
+  .gcard.wide p{max-width:840px;font-size:15px;margin-bottom:0}
+  @media(max-width:560px){ .gcard.wide{flex-direction:column} .gcard.wide .ic{width:100%;padding:22px 0;border-right:0;border-bottom:3px solid var(--r)} }
+  /* --- page Outillage --- */
+  body.outil .gammes .grid{grid-template-columns:repeat(4,1fr)}
+  .hero.outil{min-height:440px}
+  .hero.outil .bg{background:url('assets/hero-outillage.png') 100% 50% / cover no-repeat}
+  .hero.outil .veil{background:linear-gradient(90deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.3) 45%,transparent 100%)}
+  .hero.outil h1{font-size:68px;line-height:.95}
+  .hero.outil .sub{text-transform:none;font-weight:600;font-size:19px;color:#ededed;max-width:560px;margin:26px 0 0}
+  .gcard .im.ph{flex-direction:column;gap:10px}
+  .gcard .im.ph em{font-style:normal;color:#8a8a8a;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  @media(max-width:1100px){ body.outil .gammes .grid{grid-template-columns:1fr 1fr} }
+  @media(max-width:560px){ body.outil .gammes .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body class="outil">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ic-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="ic-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></symbol>
+<symbol id="ic-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+<symbol id="ic-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+<symbol id="ic-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+<symbol id="ic-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+<symbol id="ic-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+<symbol id="ic-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.4-.4-2.6z"/></symbol>
+<symbol id="ic-hex" viewBox="0 0 24 24"><polygon points="12 2 21 7 21 17 12 22 3 17 3 7"/><polygon points="12 7 16.5 9.5 16.5 14.5 12 17 7.5 14.5 7.5 9.5"/></symbol>
+<symbol id="ic-case" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="2" y1="13" x2="22" y2="13"/></symbol>
+</defs></svg>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+    <img src="assets/logo-header.png" alt="ZOT Pièces Auto">
+    <span class="tagline">Depuis 2007 à la Rivière St Louis</span>
+  </a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="pieces-auto.html">Pièces auto</a>
+      <a href="outillage.html" class="act">Outillage</a>
+      <a href="apropos.html">À propos</a>
+      <a href="#magasin">Contact</a>
+    </nav>
+  </div>
+  <div class="telbox">
+    <a class="tphone" href="tel:+262262444624"><svg class="i"><use href="#ic-phone"/></svg>0262 444 624</a>
+    <a class="tmail" href="mailto:zotpiecesauto@gmail.com">zotpiecesauto@gmail.com</a>
+  </div>
+</header>
+
+<section class="hero outil">
+  <div class="bg"></div><div class="veil"></div>
+  <div class="wrap">
+    <h1>NOTRE OUTILLAGE<br><span class="red">GAMME PROFESSIONNELLE</span></h1>
+    <div class="haccent"></div>
+    <div class="sub">Douilles choc, outillage à main en aciers spéciaux, coffrets et matériel d'atelier. Du matériel de pro, au comptoir de la Rivière Saint-Louis.</div>
+  </div>
+</section>
+
+<section class="sect gammes"><div class="wrap">
+  <h2 class="sect-t">Gamme professionnelle</h2>
+  <div class="grid">
+    <div class="gcard">
+      <img class="im" src="assets/outil-douilles.png" alt="Douilles choc">
+      <div class="b"><h3>Douilles choc</h3><div class="u"></div>
+      <p>Douilles et accessoires à chocs, chrome-molybdène. Robustesse d'atelier — garantie à vie*.</p></div>
+    </div>
+    <div class="gcard">
+      <img class="im" src="assets/outil-main.png" alt="Outillage à main">
+      <div class="b"><h3>Outillage à main</h3><div class="u"></div>
+      <p>Clés, pinces, tournevis et cliquets en aciers spéciaux. L'outil juste, qui dure.</p></div>
+    </div>
+    <div class="gcard">
+      <img class="im" src="assets/outil-coffrets.png" alt="Coffrets">
+      <div class="b"><h3>Coffrets</h3><div class="u"></div>
+      <p>Coffrets de calage, d'extraction et coffrets spécifiques. Complets, prêts à l'emploi.</p></div>
+    </div>
+    <div class="gcard">
+      <img class="im" src="assets/outil-atelier.png" alt="Matériel d'atelier">
+      <div class="b"><h3>Matériel d'atelier</h3><div class="u"></div>
+      <p>Scie à ruban à métaux, compresseur, table de soudure et équipements pour l'atelier.</p></div>
+    </div>
+    <div class="gcard wide">
+      <div class="ic"><svg class="i"><use href="#ic-truck"/></svg></div>
+      <div class="b"><h3>Sur commande</h3><div class="u"></div>
+      <p>Un outil spécifique ou une grosse pièce d'atelier&nbsp;? On le trouve et on le fait venir. Dites-nous ce qu'il vous faut au comptoir, on s'occupe de l'approvisionnement.</p></div>
+    </div>
+  </div>
+  <p style="margin-top:24px;font-size:12px;color:#8a8a8a;line-height:1.5">* Garantie à vie applicable uniquement aux produits spécifiquement désignés comme tels, contre les défauts de matière et de fabrication, sur les outils à main utilisés dans des conditions normales, sur présentation de la preuve d'achat. Sont exclus l'usure normale ainsi que tout usage anormal ou non adapté de l'outil (par exemple s'en servir comme levier ou burin). Selon les conditions du fabricant.</p>
+</div></section>
+
+
+<section class="cta-band fullw">
+  <svg class="spark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 C55 40 60 45 100 50 C60 55 55 60 50 100 C45 60 40 55 0 50 C40 45 45 40 50 0Z"/></svg>
+  <svg class="spark l" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 C55 40 60 45 100 50 C60 55 55 60 50 100 C45 60 40 55 0 50 C40 45 45 40 50 0Z"/></svg>
+  <div class="wrap">
+    <h2>Besoin d'un outil précis ?</h2>
+    <p>Passez au comptoir de la Rivière Saint-Louis : on vous conseille le bon outil, et ce qu'on n'a pas en rayon se commande rapidement.</p>
+    <a class="btn btn-w" href="#magasin"><svg class="i"><use href="#ic-pin"/></svg> Venir au magasin</a>
+  </div>
+</section>
+
+<section class="magasin" id="magasin"><div class="wrap"><div class="grid">
+  <div class="photo"></div>
+  <div class="info">
+    <h3>Votre magasin<br>à la <span class="r">Rivière Saint-Louis</span></h3>
+    <div class="row"><span class="ic"><svg class="i"><use href="#ic-pin"/></svg></span><div>25 Pente Nicole<br>97421 Rivière Saint-Louis, La Réunion</div></div>
+    <div class="row"><span class="ic"><svg class="i"><use href="#ic-phone"/></svg></span><div><b><a href="tel:+262262444624" style="color:inherit">0262 444 624</a></b></div></div>
+    <div class="row"><span class="ic"><svg class="i"><use href="#ic-clock"/></svg></span><div>Lun – Ven : 8h-12h / 13h30-18h<br>Samedi : 8h-12h / 13h30-17h</div></div>
+    <div class="row"><span class="ic"><svg class="i"><use href="#ic-card"/></svg></span><div>4× sans frais · espèces</div></div>
+    <a class="btn btn-r" style="margin-top:6px" href="https://maps.google.com/?q=25+Pente+Nicole+Rivière+Saint-Louis+Réunion"><svg class="i"><use href="#ic-pin"/></svg> Voir l'itinéraire</a>
+  </div>
+  <div class="map">
+    <iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=55.395%2C-21.285%2C55.425%2C-21.255&amp;layer=mapnik&amp;marker=-21.270%2C55.405"></iframe>
+  </div>
+</div></div></section>
+
+<footer>
+  <div class="wrap"><div class="grid">
+    <div>
+      <img class="flogo" src="assets/logo-header.png" alt="ZOT Pièces Auto">
+      <p class="about">Depuis 2007, ZOT Pièces Auto accompagne les automobilistes du Sud avec des produits de qualité, au meilleur prix, près de chez vous.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/zotpiecesauto.lariviere" aria-label="Facebook" target="_blank" rel="noopener"><svg class="i"><use href="#ic-fb"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Liens utiles</h4>
+      <ul><li><a href="pieces-auto.html">Pièces auto</a></li><li><a href="outillage.html">Outillage</a></li><li><a href="apropos.html">À propos</a></li><li><a href="#magasin">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Informations</h4>
+      <ul><li><a href="#">Mentions légales</a></li><li><a href="#">Conditions de vente</a></li><li><a href="#">Confidentialité</a></li></ul>
+    </div>
+    <div>
+      <h4>Nous contacter</h4>
+      <div class="ct"><span class="ic"><svg class="i"><use href="#ic-pin"/></svg></span><div>25 Pente Nicole<br>97421 Rivière Saint-Louis</div></div>
+      <div class="ct"><span class="ic"><svg class="i"><use href="#ic-phone"/></svg></span><div><a href="tel:+262262444624">0262 444 624</a></div></div>
+      <div class="ct"><span class="ic"><svg class="i"><use href="#ic-mail"/></svg></span><div><a href="mailto:zotpiecesauto@gmail.com">zotpiecesauto@gmail.com</a></div></div>
+    </div>
+  </div></div>
+  <div class="base fullw"><svg class="i"><use href="#ic-heart"/></svg> MERCI DE SOUTENIR LE COMMERCE LOCAL · SIRET 493 272 314 00011</div>
+</footer>
+</body>
+</html>
