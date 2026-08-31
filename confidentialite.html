@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pièces Auto — ZOT Pièces Auto · La Réunion</title>
-<meta name="description" content="Pièces auto d'origine et grandes marques à la Rivière Saint-Louis : freinage, filtration, distribution, électricité. Le plus grand choix à La Réunion.">
+<title>Politique de confidentialité — ZOT Pièces Auto</title>
+<meta name="description" content="Politique de confidentialité du site ZOT Pièces Auto (site vitrine, aucune collecte de données).">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -112,9 +112,20 @@
   .gcard.wide h3{font-size:22px}
   .gcard.wide p{max-width:840px;font-size:15px;margin-bottom:0}
   @media(max-width:560px){ .gcard.wide{flex-direction:column} .gcard.wide .ic{width:100%;padding:22px 0;border-right:0;border-bottom:3px solid var(--r)} }
+  /* --- page À propos --- */
+  .hero.apropos{min-height:480px}
+  .hero.apropos .bg{background:url('assets/hero-apropos.webp') center 42% / cover no-repeat}
+  .hero.apropos .veil{background:linear-gradient(90deg,rgba(0,0,0,.74) 0%,rgba(0,0,0,.5) 33%,rgba(0,0,0,.12) 62%,transparent 100%)}
+  .hero.apropos h1{font-size:64px;line-height:.95}
+  .about-body{max-width:780px;margin:0 auto;padding:8px 0}
+  .about-body .lead{font-size:20px;color:#2a2a2a;font-weight:600;line-height:1.6;margin-bottom:30px}
+  .about-body h3{font-size:23px;font-weight:900;text-transform:uppercase;letter-spacing:-.2px;margin:30px 0 4px}
+  .about-body .u{width:44px;height:4px;background:var(--r);border-radius:2px;margin:0 0 16px}
+  .about-body p{font-size:16px;color:#3a3a3a;line-height:1.7;margin-bottom:14px}
+  .hero.apropos .wrap{max-width:none;margin:0;padding:66px 26px 66px 56px}
 </style>
 </head>
-<body>
+<body class="apropos">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
 <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
@@ -135,7 +146,7 @@
   </a>
     <nav>
       <a href="index.html">Accueil</a>
-      <a href="pieces-auto.html" class="act">Pièces auto</a>
+      <a href="pieces-auto.html">Pièces auto</a>
       <a href="outillage.html">Outillage</a>
       <a href="apropos.html">À propos</a>
       <a href="#magasin">Contact</a>
@@ -145,89 +156,23 @@
     <a class="tphone" href="tel:+262262444624"><svg class="i"><use href="#ic-phone"/></svg>0262 444 624</a>
     <a class="tmail" href="mailto:zotpiecesauto@gmail.com">zotpiecesauto@gmail.com</a>
   </div>
-</header>
-
-<section class="hero pieces">
-  <div class="bg"></div><div class="veil"></div>
-  <div class="wrap">
-    <h1>NOS PIÈCES AUTO<br><span class="red">LE PLUS GRAND CHOIX</span><br><span class="red">À LA RÉUNION</span></h1>
-    <div class="haccent"></div>
-    <div class="sub">Pièces d'origine et de grandes marques, adaptables à tous types de véhicules. Du freinage au moteur, trouvez la bonne référence au comptoir.</div>
-  </div>
+</header><section class="hero apropos" style="min-height:200px">
+  <div class="bg" style="background:#141414"></div><div class="veil" style="background:linear-gradient(90deg,rgba(0,0,0,.4),transparent)"></div>
+  <div class="wrap"><h1>POLITIQUE DE<br><span class="red">CONFIDENTIALITÉ</span></h1></div>
 </section>
-
-<section class="sect gammes"><div class="wrap">
-  <h2 class="sect-t">Nos gammes de pièces</h2>
-  <div class="grid">
-    <div class="gcard">
-      <img class="im" src="assets/card-freinage.webp" alt="Freinage et liaison au sol">
-      <div class="b"><h3>Freinage &amp; liaison au sol</h3><div class="u"></div>
-      <p>Plaquettes, disques, étriers, kits de frein, amortisseurs, ressorts de suspension et triangles. La sécurité avant tout.</p></div>
-    </div>
-    <div class="gcard">
-      <img class="im" src="assets/card-filtration.webp" alt="Filtration et révision">
-      <div class="b"><h3>Filtration &amp; révision</h3><div class="u"></div>
-      <p>Filtres à huile, à air, à carburant et habitacle. Tout le nécessaire pour l'entretien régulier de votre moteur.</p></div>
-    </div>
-    <div class="gcard">
-      <img class="im" src="assets/card-moteur.webp" alt="Moteur et distribution">
-      <div class="b"><h3>Moteur &amp; distribution</h3><div class="u"></div>
-      <p>Kits de distribution, courroies, galets, pompes à eau, poulies et embrayages pour rouler l'esprit tranquille.</p></div>
-    </div>
-    <div class="gcard">
-      <img class="im" src="assets/card-electricite.webp" alt="Électricité et démarrage">
-      <div class="b"><h3>Électricité &amp; démarrage</h3><div class="u"></div>
-      <p>Batteries, alternateurs, démarreurs et balais d'essuie-glace adaptés aux conditions tropicales.</p></div>
-    </div>
-    <div class="gcard">
-      <div class="im ph"><svg viewBox="0 0 24 24"><use href="#ic-box"/></svg></div>
-      <div class="b"><h3>Tout le reste</h3><div class="u"></div>
-      <p>Plus de 100 000 références disponibles. Du boulon à la crémaillère de direction, nous avons tout ce qu'il faut pour votre véhicule, tout de suite.</p></div>
-    </div>
-    <div class="gcard wide">
-      <div class="ic"><svg class="i"><use href="#ic-truck"/></svg></div>
-      <div class="b"><h3>Sur commande</h3><div class="u"></div>
-      <p>Besoin d'une pièce spécifique ou introuvable&nbsp;? Ici, tout se commande au comptoir.<br>Passez nous voir en magasin avec votre modèle ou votre carte grise : flexibles, durits, embrayages, clim, échappement... Nous trouvons et commandons la référence qu'il vous faut pour une mise à disposition rapide sur place.</p></div>
-    </div>
-  </div>
-</div></section>
-
-<section class="marques"><div class="wrap"><div class="box">
-  <h2>Nos grandes marques partenaires</h2>
-  <div class="row">
-    <div class="brand-slot"><img src="assets/brand-bosch.png" alt="Bosch"></div>
-    <div class="brand-slot"><img src="assets/brand-valeo.png" alt="Valeo"></div>
-    <div class="brand-slot"><img src="assets/brand-brembo.png" alt="Brembo"></div>
-    <div class="brand-slot"><img src="assets/brand-ntn.png" alt="NTN-SNR"></div>
-    <div class="brand-slot"><img src="assets/brand-sachs.png" alt="Sachs"></div>
-    <div class="brand-slot"><img src="assets/brand-dayco.png" alt="Dayco"></div>
-    <div class="brand-slot"><img src="assets/brand-mann.png" alt="Mann-Filter"></div>
-  </div>
+<section class="sect"><div class="wrap"><div class="about-body">
+  <p class="lead">Ce site est un site vitrine : il ne propose ni vente en ligne, ni formulaire, ni création de compte.</p>
+  <h3>Données personnelles</h3><div class="u"></div>
+  <p>Nous ne collectons aucune donnée personnelle via ce site. Aucun formulaire de contact ni inscription n'y figure. Pour nous joindre, utilisez le téléphone ou l'e-mail indiqués, ou passez directement en magasin.</p>
+  <h3>Cookies</h3><div class="u"></div>
+  <p>Ce site n'utilise aucun cookie de suivi ni de publicité. Seuls des cookies techniques strictement nécessaires, déposés par notre hébergeur Cloudflare à des fins de sécurité et de bon fonctionnement, peuvent être utilisés.</p>
+  <h3>Services tiers</h3><div class="u"></div>
+  <p>Un plan interactif fourni par OpenStreetMap est intégré à nos pages ; son affichage peut transmettre votre adresse IP à OpenStreetMap. Aucune autre donnée n'est partagée avec des tiers.</p>
+  <h3>Vos droits</h3><div class="u"></div>
+  <p>Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Ce site ne collectant pas de données, ces droits s'exercent pour les seuls échanges que vous engagez avec nous (téléphone, e-mail). Contact&nbsp;: zotpiecesauto@gmail.com.</p>
+  <h3>Responsable</h3><div class="u"></div>
+  <p>ZOT' PIECES AUTO — 25 Pente Nicole, 97421 Saint-Louis, La Réunion.</p>
 </div></div></section>
-
-<section class="cta-band fullw">
-  <div class="wrap">
-    <h2>Vous cherchez une pièce précise ?</h2>
-    <p>Venez nous voir au comptoir de la Rivière Saint-Louis avec votre carte grise ou une photo de la pièce usée. Nos experts identifient immédiatement la bonne référence.</p>
-    <a class="btn btn-w" href="#magasin"><svg class="i"><use href="#ic-pin"/></svg> Venir au magasin</a>
-  </div>
-</section>
-
-<section class="magasin" id="magasin"><div class="wrap"><div class="grid">
-  <div class="photo"></div>
-  <div class="info">
-    <h3>Votre magasin<br>à la <span class="r">Rivière Saint-Louis</span></h3>
-    <div class="row"><span class="ic"><svg class="i"><use href="#ic-pin"/></svg></span><div>25 Pente Nicole<br>97421 Rivière Saint-Louis, La Réunion</div></div>
-    <div class="row"><span class="ic"><svg class="i"><use href="#ic-phone"/></svg></span><div><b><a href="tel:+262262444624" style="color:inherit">0262 444 624</a></b></div></div>
-    <div class="row"><span class="ic"><svg class="i"><use href="#ic-clock"/></svg></span><div>Lundi – Vendredi : 8h-12h / 13h30-18h<br>Samedi : 8h-12h / 13h30-17h</div></div>
-    <div class="row"><span class="ic"><svg class="i"><use href="#ic-card"/></svg></span><div>CB · 4× sans frais · espèces</div></div>
-    <a class="btn btn-r" style="margin-top:6px" href="https://maps.google.com/?q=25+Pente+Nicole+Rivière+Saint-Louis+Réunion"><svg class="i"><use href="#ic-pin"/></svg> Voir l'itinéraire</a>
-  </div>
-  <div class="map">
-    <iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=55.432301%2C-21.268250%2C55.442301%2C-21.258250&amp;layer=mapnik&amp;marker=-21.263250%2C55.437301"></iframe>
-  </div>
-</div></div></section>
-
 <footer>
   <div class="wrap"><div class="grid">
     <div>
