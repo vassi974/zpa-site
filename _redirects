@@ -1,14 +1,14 @@
 # Redirections SEO — anciennes URL Wix -> nouveau site (301)
 
-# Activités abandonnées / arrêtées -> accueil (pas de fausse promesse)
+# Activités arrêtées / vendues / abandonnées -> accueil
 /shop               /   301
 /product-page/*     /   301
 /cles-de-voiture    /   301
 /meublé-tampon      /   301
 /meubl%C3%A9-tampon /   301
+/le-garage          /   301
+/faq                /   301
+/book-online        /   301
 
-# Pages avec équivalent sur le nouveau site
-/le-garage          /apropos.html   301
-/faq                /apropos.html   301
-/nous-contacter     /#magasin       301
-/book-online        /#magasin       301
+# Ce qui reste réel sur le nouveau site
+/nous-contacter     /#magasin   301
