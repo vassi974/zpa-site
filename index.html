@@ -168,6 +168,46 @@
   .fullw{margin-left:calc(-50vw + 50%);width:100vw}
   .hero{min-height:635px;align-items:flex-start}
   .hero .wrap{position:relative;max-width:none;margin:0;padding:44px 26px 0 56px}
+  /* --- Mobile --- */
+  @media(max-width:820px){
+    .wrap{padding:0 18px}
+    header .wrap{flex-wrap:wrap;height:auto;padding:14px 18px 12px;gap:0 14px}
+    .brand{order:1;flex-direction:row;align-items:center;gap:10px}
+    .brand img{height:46px}
+    .brand .tagline{display:none}
+    .telbox{order:2;position:static;clip-path:none;height:auto;background:transparent;flex-direction:row;align-items:center;gap:0;padding:0;margin-left:auto}
+    .telbox .tmail{display:none}
+    .telbox .tphone{font-size:15px;gap:7px}
+    .telbox .tphone svg.i{width:20px;height:20px}
+    nav{order:3;width:100%;flex-wrap:wrap;justify-content:center;gap:8px 16px;padding-top:10px;margin-top:10px;border-top:1px solid rgba(255,255,255,.14)}
+    nav a{font-size:12.5px}
+    .hero{min-height:auto;align-items:center}
+    .hero .wrap{padding:36px 18px}
+    .hero h1{font-size:42px}
+    .hero .pre{font-size:14px;letter-spacing:1.5px}
+    .hero .sub{font-size:16px;margin:16px 0 26px}
+    .badges{gap:20px}
+    .comptoir .grid{grid-template-columns:1fr;gap:28px}
+    .comptoir .sep{display:none}
+    .comptoir h2{font-size:28px}
+    .cats .grid{grid-template-columns:1fr}
+    .cat{padding:30px 26px;min-height:220px}
+    .cat .c{max-width:100%}
+    .cat h3{font-size:26px}
+    .args .grid{grid-template-columns:1fr 1fr;padding:22px 10px}
+    .arg{padding:8px 10px}
+    .arg+.arg{border-left:0}
+    .magasin .grid{grid-template-columns:1fr}
+    .magasin .photo,.magasin .map{min-height:220px}
+    .magasin .info{padding:32px 26px}
+    footer .grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+    footer .flogo{height:60px}
+  }
+  @media(max-width:480px){
+    .hero h1{font-size:32px}
+    .args .grid{grid-template-columns:1fr}
+    footer .grid{grid-template-columns:1fr}
+  }
 </style>
 </head>
 <body>
