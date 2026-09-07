@@ -1,8 +1,13 @@
 # Redirections SEO — anciennes URL Wix -> nouveau site (301)
 
+# Anciennes fiches produit Wix -> page pièces auto
+/product-page/*     /pieces-auto   301
+/shop               /pieces-auto   301
+
+# Ancienne page d'accueil Wix -> accueil
+/accueil            /   301
+
 # Activités arrêtées / vendues / abandonnées -> accueil
-/shop               /   301
-/product-page/*     /   301
 /cles-de-voiture    /   301
 /meublé-tampon      /   301
 /meubl%C3%A9-tampon /   301
